@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Умный дом</string>
+    <string name="action_settings">Очистить данные</string>
+    <string name="error_network_timeout">timeout</string>
+    <string name="in">Дома:</string>
+    <string name="out">На улице:</string>
+    <string name="cel">°C</string>
+    <string name="confirm_text">Отправка выбранной команды на сервер</string>
+    <string name="confirm_yes">Да</string>
+    <string name="confirm_no">Нет</string>
+    <string name="confirm_title">Выполнить команду?</string>
+    <string name="action_ogorod">Свет в огороде</string>
+</resources>

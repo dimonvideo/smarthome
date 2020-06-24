@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="action_settings">Clear data</string>
+    <string name="error_network_timeout">Error</string>
+    <string name="in">In:</string>
+    <string name="out">Out:</string>
+    <string name="cel">°C</string>
+    <string name="confirm_text">Execute</string>
+    <string name="confirm_yes">Yes</string>
+    <string name="confirm_no">No</string>
+    <string name="confirm_title">Execute command</string>
+    <string name="action_ogorod">Light</string>
+</resources>
