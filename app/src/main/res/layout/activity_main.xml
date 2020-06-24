@@ -25,30 +25,36 @@
                 android:id="@+id/toolbarInText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#8B000000"
                 android:text="@string/in"/>
             <TextView
                 android:id="@+id/toolbarIn"
                 android:layout_width="wrap_content"
+                android:textColor="#8B000000"
                 android:layout_height="wrap_content"
                 android:paddingLeft="5dp"/>
                 <TextView
                     android:id="@+id/toolbarInc"
                     android:layout_width="wrap_content"
+                    android:textColor="#8B000000"
                     android:layout_height="wrap_content"
                     android:text="@string/cel"/>
             <TextView
                 android:id="@+id/toolbarOutText"
                 android:layout_width="wrap_content"
+                android:textColor="#8B000000"
                 android:layout_height="wrap_content"
                 android:paddingLeft="5dp"
                 android:text="@string/out"/>
             <TextView
                 android:id="@+id/toolbarOut"
+                android:textColor="#8B000000"
                 android:layout_width="wrap_content"
                 android:paddingLeft="5dp"
                 android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/toolbarOutc"
+                    android:textColor="#8B000000"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/cel"/>
