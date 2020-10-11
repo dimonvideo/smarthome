@@ -1,6 +1,8 @@
 package com.dimonvideo.smarthome;
 
 import android.annotation.SuppressLint;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +15,9 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
@@ -47,9 +52,16 @@ public class MainActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.cancelAll();
         WebView webview = this.findViewById(R.id.view_first);
+        try {
+            FirebaseOptions options = new FirebaseOptions.Builder().build();
+            FirebaseApp.initializeApp(MainActivity.this, options, "SmartHome");
 
+                FirebaseMessaging.getInstance().subscribeToTopic("all");
+        } catch (Throwable ignored) {
+        }
         String page = "https://dom.dimon.me/esp3.php";
         WebSettings webSettings = webview.getSettings();
         webSettings.setJavaScriptEnabled(true);
