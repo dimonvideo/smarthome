@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "532425247202",
+    "firebase_url": "https://smarthome-dv.firebaseio.com",
+    "project_id": "smarthome-dv",
+    "storage_bucket": "smarthome-dv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532425247202:android:c66c1918b93ebe684851bb",
+        "android_client_info": {
+          "package_name": "com.dimonvideo.smarthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532425247202-i3u9em3ih6nm0jckn92st4kmoipqijia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXhpGPaKJynGU8sKA1bWHmVDoFeait7ZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532425247202-i3u9em3ih6nm0jckn92st4kmoipqijia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
