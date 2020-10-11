@@ -56,7 +56,10 @@ public class MainActivity extends AppCompatActivity {
         notificationManager.cancelAll();
         WebView webview = this.findViewById(R.id.view_first);
         try {
-            FirebaseOptions options = new FirebaseOptions.Builder().build();
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                    .setApplicationId("1:532425247202:android:c66c1918b93ebe684851bb") // Required for Analytics.
+                    .setProjectId("smarthome-dv") // Required for Firebase Installations.
+                    .build();
             FirebaseApp.initializeApp(MainActivity.this, options, "SmartHome");
 
                 FirebaseMessaging.getInstance().subscribeToTopic("all");
